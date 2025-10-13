@@ -1,2 +1,2 @@
 # Echidna
-dnichol28, kellymjones25, cwhitexula29, janyaw
+dnichols28, kellymjones25, cwhitexula29, janyaw
