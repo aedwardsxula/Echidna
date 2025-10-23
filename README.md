@@ -1,5 +1,6 @@
 # Echidna
 Team Members for Echidna Team: Lead-dnichols28, Designer-kellymjones25, SWE-cwhitexula29, Tester-janyaw
+
 Repo Choice Ranking:
 
 1) https://github.com/Reljod/Python-Data-Scraping-IMDb-Movie-site-using-BeautifulSoup-Series-1-
