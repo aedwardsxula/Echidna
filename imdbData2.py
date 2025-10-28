@@ -114,13 +114,3 @@ class IMDB:
         return pd.DataFrame(movieData)
 
 
-if __name__ == '__main__':
-    # Example: load a CSV containing either URLs or raw HTML
-    csv_path = "Movie_Data.csv"
-    df = pd.read_csv(csv_path)
-
-    if 'html' in df.columns:
-        for html_content in df['html']:
-            imdb_page = IMDB(html_content)
-            movie_df = imdb_page.movieData()
-            print(movie_df.head())
