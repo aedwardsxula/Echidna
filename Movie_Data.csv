@@ -1,0 +1,39 @@
+html
+"<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>A House of Dynamite</a>
+            <span class='lister-item-year text-muted unbold'>(2025)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>112 min</span> <span class='genre'>Disaster, Political Drama, Political Thriller, Drama, Thriller</span></p>
+        <div class='ratings-bar'>
+            <strong>6.6</strong>
+            <span class='metascore favorable'>75</span>
+        </div>
+        <p class='text-muted'>When a single, unattributed missile is launched at the United States, a race begins to determine who is responsible and how to respond.</p>
+        <p class=''>Director: Kathryn Bigelow | Stars: Idris Elba, Rebecca Ferguson, Gabriel Basso</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='2300000'>2,300,000</span>
+            <span name='nv' data-value='830000000'>$830.0M</span>
+        </p>
+    </div>
+</div>"
+"<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Weapons</a>
+            <span class='lister-item-year text-muted unbold'>(2025)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>128 min</span> <span class='genre'>Action, Sci-Fi</span></p>
+        <div class='ratings-bar'>
+            <strong>7.5</strong>
+            <span class='metascore favorable'>81</span>
+        </div>
+        <p class='text-muted'>When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.</p>
+        <p class=''>Director: Zach Cregger| Stars: Scarlett Sher, Julia Garner, Cary Christopher</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='1900000'>1,900,000</span>
+            <span name='nv' data-value='467000000'>$467.0M</span>
+        </p>
+    </div>
+</div>"

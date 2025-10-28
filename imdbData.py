@@ -1,3 +1,4 @@
+#FOR TESTING PURPOSES ONLY, PLEASE DO NOT ATTEMPT TO RUN THIS FILE DIRECTLY
 import lxml
 import re
 import numpy as np
