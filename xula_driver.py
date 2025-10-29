@@ -11,6 +11,29 @@ def main():
     #TODO: The Tester must create and call a function that scrapes the Centennial 
     # Campaign Impact from XULA's website.
     
+    def get_centennial_campaign_impact(url):
+
+        url="https://www.xula.edu/centennial/campaign-impact"
+        response = get(url, timeout=10)
+        response.raise_for_status()  
+
+        soup = BeautifulSoup(response.text, "html.parser")
+
+        title = soup.find("h1")
+        title_text = title.get_text(strip=True) if title else "No title found"
+
+        paragraphs = [p.get_text(strip=True) for p in soup.find_all("p")]
+        impact_paragraphs = [p for p in paragraphs if "impact" in p.lower() or "campaign" in p.lower()]
+
+        if not impact_paragraphs:
+            impact_paragraphs = paragraphs[:3]  
+        return {
+            "title": title_text,
+            "impact_text": impact_paragraphs,
+            "source_url": url
+        }
+
+    
     csv_path = "Movie_Data.csv"
     df = pd.read_csv(csv_path)
 
