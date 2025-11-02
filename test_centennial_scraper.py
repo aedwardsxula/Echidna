@@ -38,6 +38,17 @@ class TestCentennialScraper(unittest.TestCase):
         self.assertIsInstance(result["impact_text"], list, "impact_text should still be a list")
         self.assertEqual(result["impact_text"], ["Campaign impact text not found."],
                          "Fallback message should be returned when no text found")
+        
+    def test_title_scraped_correctly(self):
+        """
+        Test 4: Ensure the page title is captured correctly.
+        """
+        url = "https://www.xula.edu/about/centennial.html"
+        result = get_centennial_campaign_impact(url)
+        
+        self.assertIn("title", result, "Result should have a 'title' key")
+        self.assertIsInstance(result["title"], str, "Title should be a string")
+        self.assertTrue(result["title"].strip(), "Title should not be empty")
 
 
 
