@@ -30,6 +30,15 @@ class TestCentennialScraper(unittest.TestCase):
         
     
    
+    def test_missing_text_handling(self):
+        """Test 3: If the text is not found, the function should return a fallback message."""
+        fake_url = "https://www.xula.edu/nonexistent-page.html"
+        result = get_centennial_campaign_impact(fake_url)
+
+        self.assertIsInstance(result["impact_text"], list, "impact_text should still be a list")
+        self.assertEqual(result["impact_text"], ["Campaign impact text not found."],
+                         "Fallback message should be returned when no text found")
+
 
 
         
