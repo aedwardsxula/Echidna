@@ -51,6 +51,18 @@ class TestCentennialScraper(unittest.TestCase):
         self.assertTrue(result["title"].strip(), "Title should not be empty")
 
 
+    def test_source_url_returned(self):
+        """
+        Test 5: Ensure the source URL is returned correctly in the result.
+        """
+        url = "https://www.xula.edu/about/centennial.html"
+        result = get_centennial_campaign_impact(url)
+        
+        self.assertIn("source_url", result, "Result should have a 'source_url' key")
+        self.assertEqual(result["source_url"], url, "The source URL should match the requested URL")
+
+
+
 
         
 
