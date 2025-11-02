@@ -17,3 +17,18 @@ class TestCentennialScraper(unittest.TestCase):
 if __name__ == "__main__":
     unittest.main()
 
+
+
+class TestCentennialScraper(unittest.TestCase):
+
+    def test_impact_text_format(self):
+        """
+        Test 2: Check that the scraped campaign impact text is formatted correctly.
+        """
+        url = "https://www.xula.edu/about/centennial.html"
+        result = get_centennial_campaign_impact(url)
+
+        self.assertIsInstance(result["impact_text"], list, "impact_text should be a list")
+        self.assertGreater(len(result["impact_text"]), 0, "impact_text list should not be empty")
+        self.assertTrue(all(isinstance(p, str) and p.strip() for p in result["impact_text"]),
+                        "All impact_text items should be non-empty strings")
