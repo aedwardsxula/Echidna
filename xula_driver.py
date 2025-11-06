@@ -9,10 +9,8 @@ import lxml
 import requests
 from Movie import Movie
 
-def main():
-    
-    
-    def get_centennial_campaign_impact(url):
+
+def get_centennial_campaign_impact(url):
         headers = {
             "User-Agent": (
                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -52,27 +50,29 @@ def main():
             "title": title_text,
             "impact_text": impact_paragraphs,
             "source_url": url,
-        }
+        }   
 
 
 
+def print_welcome_message():
+    print(r"""
+            ╔═══════════════════════════════════════════════════════╗
+            ║              🎬  WELCOME VIEWERS! 🎥                  🍿
+            ║            Welcome to Movie/TV Review                 ║
+            ╚═══════════════════════════════════════════════════════╝
+    """)
 
 
-
-
-
-
-
-
-
+def main():
+    
     campaign_data = get_centennial_campaign_impact("https://www.xula.edu/about/centennial.html")
-
+    
     print(f"{campaign_data['title']}: {campaign_data['impact_text']}\n")
 
-    
     csv_path = "Movie_Data.csv"
+        
     df = pd.read_csv(csv_path)
-
+    print_welcome_message()
     print("Welcome to the IMDB Top Movies Data Display!")
     print()
     user_input = input('What would you like see?(Type "Title", "Date", "Runtime", "Genre", "Rating", "Metascore", "Description", "Director", "Stars", "Votes", "Gross"): ')
@@ -82,10 +82,9 @@ def main():
 
 
     for html_content in df['html']:
-        imdb_page = IMDB(html_content)
-        movie_df = imdb_page.movieData()
-        all_movies.append(movie_df)
-    
+            imdb_page = IMDB(html_content)
+            movie_df = imdb_page.movieData()
+            all_movies.append(movie_df)
 
     full_df = pd.concat(all_movies, ignore_index=True)
     print("Here is our movie data for ", user_input + ":")
@@ -100,6 +99,21 @@ def main():
         else:
             print("Movie not found.")
 
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
     
 if __name__ == "__main__":
     main()
