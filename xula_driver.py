@@ -10,18 +10,6 @@ import requests
 from Movie import Movie
 
 def main():
-    #ascii art added by @cwhitexula29
-    print(r"""
- __     __    __     _____     ______        ______   ______     ______      __    __     ______     __   __   __     ______     ______    
-/\ \   /\ "-./  \   /\  __-.  /\  == \      /\__  _\ /\  __ \   /\  == \    /\ "-./  \   /\  __ \   /\ \ / /  /\ \   /\  ___\   /\  ___\   
-\ \ \  \ \ \-./\ \  \ \ \/\ \ \ \  __<      \/_/\ \/ \ \ \/\ \  \ \  _-/    \ \ \-./\ \  \ \ \/\ \  \ \ \'/   \ \ \  \ \  __\   \ \___  \  
- \ \_\  \ \_\ \ \_\  \ \____-  \ \_____\       \ \_\  \ \_____\  \ \_\       \ \_\ \ \_\  \ \_____\  \ \_/     \ \_\  \ \_____\  \/\_____\ 
-  \/_/   \/_/  \/_/   \/____/   \/_____/        \/_/   \/_____/   \/_/        \/_/  \/_/   \/_____/   \/_       \/_/   \/_____/   \/_____/ 
-                                                                                                                                           
-          """)
-    print("Welcome to the IMDB Top Movies Data Driver!")
-    print()
-    
     def get_centennial_campaign_impact(url):
         headers = {
             "User-Agent": (
@@ -83,6 +71,15 @@ def main():
     csv_path = "Movie_Data.csv"
     df = pd.read_csv(csv_path)
 
+    #ascii art added by @cwhitexula29
+    print(r"""
+ __     __    __     _____     ______        ______   ______     ______      __    __     ______     __   __   __     ______     ______    
+/\ \   /\ "-./  \   /\  __-.  /\  == \      /\__  _\ /\  __ \   /\  == \    /\ "-./  \   /\  __ \   /\ \ / /  /\ \   /\  ___\   /\  ___\   
+\ \ \  \ \ \-./\ \  \ \ \/\ \ \ \  __<      \/_/\ \/ \ \ \/\ \  \ \  _-/    \ \ \-./\ \  \ \ \/\ \  \ \ \'/   \ \ \  \ \  __\   \ \___  \  
+ \ \_\  \ \_\ \ \_\  \ \____-  \ \_____\       \ \_\  \ \_____\  \ \_\       \ \_\ \ \_\  \ \_____\  \ \_/     \ \_\  \ \_____\  \/\_____\ 
+  \/_/   \/_/  \/_/   \/____/   \/_____/        \/_/   \/_____/   \/_/        \/_/  \/_/   \/_____/   \/_       \/_/   \/_____/   \/_____/ 
+                                                                                                                                           
+          """)
     print("Welcome to the IMDB Top Movies Data Display!")
     print()
     user_input = input('What would you like see?(Type "Title", "Date", "Runtime", "Genre", "Rating", "Metascore", "Description", "Director", "Stars", "Votes", "Gross"): ')
