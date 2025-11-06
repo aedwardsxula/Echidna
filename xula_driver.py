@@ -9,8 +9,8 @@ import lxml
 import requests
 from Movie import Movie
 
-def main():
-    def get_centennial_campaign_impact(url):
+
+def get_centennial_campaign_impact(url):
         headers = {
             "User-Agent": (
                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -50,25 +50,27 @@ def main():
             "title": title_text,
             "impact_text": impact_paragraphs,
             "source_url": url,
-        }
+        }   
 
 
 
+def print_welcome_message():
+    print(r"""
+            ╔═══════════════════════════════════════════════════════╗
+            ║              🎬  WELCOME VIEWERS! 🎥                  🍿
+            ║            Welcome to Movie/TV Review                 ║
+            ╚═══════════════════════════════════════════════════════╝
+    """)
 
 
-
-
-
-
-
-
-
+def main():
+    
     campaign_data = get_centennial_campaign_impact("https://www.xula.edu/about/centennial.html")
-
+    
     print(f"{campaign_data['title']}: {campaign_data['impact_text']}\n")
 
-    
     csv_path = "Movie_Data.csv"
+        
     df = pd.read_csv(csv_path)
 
     #ascii art added by @cwhitexula29
