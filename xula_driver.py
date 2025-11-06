@@ -10,7 +10,17 @@ import requests
 from Movie import Movie
 
 def main():
-    
+    #ascii art added by @cwhitexula29
+    print(r"""
+ __     __    __     _____     ______        ______   ______     ______      __    __     ______     __   __   __     ______     ______    
+/\ \   /\ "-./  \   /\  __-.  /\  == \      /\__  _\ /\  __ \   /\  == \    /\ "-./  \   /\  __ \   /\ \ / /  /\ \   /\  ___\   /\  ___\   
+\ \ \  \ \ \-./\ \  \ \ \/\ \ \ \  __<      \/_/\ \/ \ \ \/\ \  \ \  _-/    \ \ \-./\ \  \ \ \/\ \  \ \ \'/   \ \ \  \ \  __\   \ \___  \  
+ \ \_\  \ \_\ \ \_\  \ \____-  \ \_____\       \ \_\  \ \_____\  \ \_\       \ \_\ \ \_\  \ \_____\  \ \_/     \ \_\  \ \_____\  \/\_____\ 
+  \/_/   \/_/  \/_/   \/____/   \/_____/        \/_/   \/_____/   \/_/        \/_/  \/_/   \/_____/   \/_       \/_/   \/_____/   \/_____/ 
+                                                                                                                                           
+          """)
+    print("Welcome to the IMDB Top Movies Data Driver!")
+    print()
     
     def get_centennial_campaign_impact(url):
         headers = {
@@ -99,6 +109,15 @@ def main():
             print(specific_movie.to_string(index=False))
         else:
             print("Movie not found.")
+
+    #random movie feature added by @cwhitexula29
+    from random_movie import RandomMovie
+
+    random_movie = RandomMovie(full_df)
+    suggestion = random_movie.get_random_movie()
+
+    print("\n🎬 Random Movie Suggestion 🎬")
+    print(f"{suggestion['Title']} ({suggestion['Date']}) - {suggestion['Genre']} | Rating: {suggestion['Rating']}")
 
     
 if __name__ == "__main__":
