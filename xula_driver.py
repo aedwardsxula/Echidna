@@ -72,7 +72,16 @@ def main():
     csv_path = "Movie_Data.csv"
         
     df = pd.read_csv(csv_path)
-    print_welcome_message()
+
+    #ascii art added by @cwhitexula29
+    print(r"""
+ __     __    __     _____     ______        ______   ______     ______      __    __     ______     __   __   __     ______     ______    
+/\ \   /\ "-./  \   /\  __-.  /\  == \      /\__  _\ /\  __ \   /\  == \    /\ "-./  \   /\  __ \   /\ \ / /  /\ \   /\  ___\   /\  ___\   
+\ \ \  \ \ \-./\ \  \ \ \/\ \ \ \  __<      \/_/\ \/ \ \ \/\ \  \ \  _-/    \ \ \-./\ \  \ \ \/\ \  \ \ \'/   \ \ \  \ \  __\   \ \___  \  
+ \ \_\  \ \_\ \ \_\  \ \____-  \ \_____\       \ \_\  \ \_____\  \ \_\       \ \_\ \ \_\  \ \_____\  \ \_/     \ \_\  \ \_____\  \/\_____\ 
+  \/_/   \/_/  \/_/   \/____/   \/_____/        \/_/   \/_____/   \/_/        \/_/  \/_/   \/_____/   \/_       \/_/   \/_____/   \/_____/ 
+                                                                                                                                           
+          """)
     print("Welcome to the IMDB Top Movies Data Display!")
     print()
     user_input = input('What would you like see?(Type "Title", "Date", "Runtime", "Genre", "Rating", "Metascore", "Description", "Director", "Stars", "Votes", "Gross"): ')
@@ -82,9 +91,10 @@ def main():
 
 
     for html_content in df['html']:
-            imdb_page = IMDB(html_content)
-            movie_df = imdb_page.movieData()
-            all_movies.append(movie_df)
+        imdb_page = IMDB(html_content)
+        movie_df = imdb_page.movieData()
+        all_movies.append(movie_df)
+    
 
     full_df = pd.concat(all_movies, ignore_index=True)
     print("Here is our movie data for ", user_input + ":")
@@ -99,21 +109,15 @@ def main():
         else:
             print("Movie not found.")
 
-    
-    
+    #random movie feature added by @cwhitexula29
+    from random_movie import RandomMovie
 
+    random_movie = RandomMovie(full_df)
+    suggestion = random_movie.get_random_movie()
 
+    print("\n🎬 Random Movie Suggestion 🎬")
+    print(f"{suggestion['Title']} ({suggestion['Date']}) - {suggestion['Genre']} | Rating: {suggestion['Rating']}")
 
-
-
-
-
-
-
-
-
-
-    
     
 if __name__ == "__main__":
     main()
