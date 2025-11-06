@@ -118,8 +118,19 @@ def main():
     print("\n🎬 Random Movie Suggestion 🎬")
     print(f"{suggestion['Title']} ({suggestion['Date']}) - {suggestion['Genre']} | Rating: {suggestion['Rating']}")
 
-    
+    #director filter feature added by @cwhitexula29
+    from director_file import DirecrtorFilter
+
+    director_filter = DirecrtorFilter(full_df)
+
+    director_input = input('\nEnter a director\'s name to filter movies: ').strip()
+    movies_by_director = director_filter.filter_by_director(director_input)
+
+    print("\n🎬 Movies by", director_input, "🎬")
+    if isinstance(movies_by_director, str):
+        print(movies_by_director)
+    else:
+        print(movies_by_director[['Title', 'Date', 'Genre', 'Rating']].to_string(index=False))
+
 if __name__ == "__main__":
     main()
-
-    
