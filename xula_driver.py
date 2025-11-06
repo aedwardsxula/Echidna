@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 from requests import get
 import lxml
 import requests
+from Movie import Movie
 
 
 def get_centennial_campaign_impact(url):
@@ -88,6 +89,16 @@ def main():
     full_df = pd.concat(all_movies, ignore_index=True)
     print("Here is our movie data for ", user_input + ":")
     print(full_df[user_input].to_string(index=False))
+
+    specific_input = input('Would you like to see a specific movie's data? (yes/no): ').strip().lower()
+    if specific_input == 'yes':
+        movie_title = input('Enter the movie title: ').strip()
+        specific_movie = full_df[full_df['Title'].str.lower() == movie_title.lower()]
+        if not specific_movie.empty:
+            print(specific_movie.to_string(index=False))
+        else:
+            print("Movie not found.")
+
     
     
 
