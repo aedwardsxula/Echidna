@@ -9,8 +9,8 @@ import lxml
 import requests
 from Movie import Movie
 
-def main():
-    def get_centennial_campaign_impact(url):
+
+def get_centennial_campaign_impact(url):
         headers = {
             "User-Agent": (
                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -50,25 +50,27 @@ def main():
             "title": title_text,
             "impact_text": impact_paragraphs,
             "source_url": url,
-        }
+        }   
 
 
 
+def print_welcome_message():
+    print(r"""
+            ╔═══════════════════════════════════════════════════════╗
+            ║              🎬  WELCOME VIEWERS! 🎥                  🍿
+            ║            Welcome to Movie/TV Review                 ║
+            ╚═══════════════════════════════════════════════════════╝
+    """)
 
 
-
-
-
-
-
-
-
+def main():
+    
     campaign_data = get_centennial_campaign_impact("https://www.xula.edu/about/centennial.html")
-
+    
     print(f"{campaign_data['title']}: {campaign_data['impact_text']}\n")
 
-    
     csv_path = "Movie_Data.csv"
+        
     df = pd.read_csv(csv_path)
 
     #ascii art added by @cwhitexula29
@@ -116,8 +118,19 @@ def main():
     print("\n🎬 Random Movie Suggestion 🎬")
     print(f"{suggestion['Title']} ({suggestion['Date']}) - {suggestion['Genre']} | Rating: {suggestion['Rating']}")
 
-    
+    #director filter feature added by @cwhitexula29
+    from director_file import DirecrtorFilter
+
+    director_filter = DirecrtorFilter(full_df)
+
+    director_input = input('\nEnter a director\'s name to filter movies: ').strip()
+    movies_by_director = director_filter.filter_by_director(director_input)
+
+    print("\n🎬 Movies by", director_input, "🎬")
+    if isinstance(movies_by_director, str):
+        print(movies_by_director)
+    else:
+        print(movies_by_director[['Title', 'Date', 'Genre', 'Rating']].to_string(index=False))
+
 if __name__ == "__main__":
     main()
-
-    
