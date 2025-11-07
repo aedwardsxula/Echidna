@@ -23,3 +23,8 @@ class TestSuggestMovie(unittest.TestCase):
     def test_remove_movie(self):
         self.suggester.remove_movie("Avatar")
         self.assertNotIn("Avatar", self.suggester.get_all_movies(), "Movie should be removed")
+
+    def test_suggest_from_empty_list(self):
+        empty_suggester = SuggestMovie([])
+        result = empty_suggester.suggest_random()
+        self.assertEqual(result, "No movies available.", "Should return message when list is empty")
