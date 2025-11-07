@@ -20,3 +20,6 @@ class TestSuggestMovie(unittest.TestCase):
         movies = self.suggester.get_all_movies()
         self.assertEqual(movies.count("Inception"), 1, "Duplicate movie should not be added")
 
+    def test_remove_movie(self):
+        self.suggester.remove_movie("Avatar")
+        self.assertNotIn("Avatar", self.suggester.get_all_movies(), "Movie should be removed")
