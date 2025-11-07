@@ -62,3 +62,12 @@ class TestDirectorFilter(unittest.TestCase):
 
         self.assertEqual(len(result), 1)
         self.assertEqual(result.iloc[0]["Title"], "Tenet")
+
+    def test_filter_empty_dataframe(self):
+        df = pd.DataFrame(columns=["Title", "Director"])
+        filter_obj = DirectorFilter(df)
+
+        result = filter_obj.filter_by_director("Any Director")
+
+        self.assertIsInstance(result, str)
+        self.assertIn("No movies found", result)
