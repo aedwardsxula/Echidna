@@ -50,3 +50,15 @@ class TestDirectorFilter(unittest.TestCase):
 
         self.assertEqual(len(result), 1)
         self.assertEqual(result.iloc[0]["Title"], "Inception")
+
+    def test_filter_with_whitespace(self):
+        df = pd.DataFrame({
+            "Title": ["Tenet"],
+            "Director": ["Christopher Nolan"]
+        })
+        filter_obj = DirectorFilter(df)
+
+        result = filter_obj.filter_by_director("  Christopher Nolan  ")
+
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result.iloc[0]["Title"], "Tenet")
