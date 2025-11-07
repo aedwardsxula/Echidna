@@ -90,7 +90,7 @@ def main():
     print("Here is our movie data for ", user_input + ":")
     print(full_df[user_input].to_string(index=False))
 
-    specific_input = input('Would you like to see a specific movie's data? (yes/no): ').strip().lower()
+    specific_input = input('Would you like to see a specific movie\'s data? (yes/no): ').strip().lower()
     if specific_input == 'yes':
         movie_title = input('Enter the movie title: ').strip()
         specific_movie = full_df[full_df['Title'].str.lower() == movie_title.lower()]
