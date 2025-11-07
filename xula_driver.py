@@ -5,7 +5,6 @@ import numpy as np
 import pandas as pd
 from bs4 import BeautifulSoup
 from requests import get
-import lxml
 import requests
 from Movie import Movie
 
@@ -72,7 +71,16 @@ def main():
     csv_path = "Movie_Data.csv"
         
     df = pd.read_csv(csv_path)
-    print_welcome_message()
+
+    #ascii art added by @cwhitexula29
+    print(r"""
+ __     __    __     _____     ______        ______   ______     ______      __    __     ______     __   __   __     ______     ______    
+/\ \   /\ "-./  \   /\  __-.  /\  == \      /\__  _\ /\  __ \   /\  == \    /\ "-./  \   /\  __ \   /\ \ / /  /\ \   /\  ___\   /\  ___\   
+\ \ \  \ \ \-./\ \  \ \ \/\ \ \ \  __<      \/_/\ \/ \ \ \/\ \  \ \  _-/    \ \ \-./\ \  \ \ \/\ \  \ \ \'/   \ \ \  \ \  __\   \ \___  \  
+ \ \_\  \ \_\ \ \_\  \ \____-  \ \_____\       \ \_\  \ \_____\  \ \_\       \ \_\ \ \_\  \ \_____\  \ \_/     \ \_\  \ \_____\  \/\_____\ 
+  \/_/   \/_/  \/_/   \/____/   \/_____/        \/_/   \/_____/   \/_/        \/_/  \/_/   \/_____/   \/_       \/_/   \/_____/   \/_____/ 
+                                                                                                                                           
+          """)
     print("Welcome to the IMDB Top Movies Data Display!")
     print()
     user_input = input('What would you like see?(Type "Title", "Date", "Runtime", "Genre", "Rating", "Metascore", "Description", "Director", "Stars", "Votes", "Gross"): ')
@@ -82,15 +90,16 @@ def main():
 
 
     for html_content in df['html']:
-            imdb_page = IMDB(html_content)
-            movie_df = imdb_page.movieData()
-            all_movies.append(movie_df)
+        imdb_page = IMDB(html_content)
+        movie_df = imdb_page.movieData()
+        all_movies.append(movie_df)
+    
 
     full_df = pd.concat(all_movies, ignore_index=True)
     print("Here is our movie data for ", user_input + ":")
     print(full_df[user_input].to_string(index=False))
 
-    specific_input = input('Would you like to see a specific movie\'s data? (yes/no): ').strip().lower()
+    specific_input = input("Would you like to see a specific movie's data? (yes/no): ").strip().lower()
     if specific_input == 'yes':
         movie_title = input('Enter the movie title: ').strip()
         specific_movie = full_df[full_df['Title'].str.lower() == movie_title.lower()]
@@ -99,23 +108,28 @@ def main():
         else:
             print("Movie not found.")
 
-    
-    
+    #random movie feature added by @cwhitexula29
+    from random_movie import RandomMovie
 
+    random_movie = RandomMovie(full_df)
+    suggestion = random_movie.get_random_movie()
 
+    print("\n🎬 Random Movie Suggestion 🎬")
+    print(f"{suggestion['Title']} ({suggestion['Date']}) - {suggestion['Genre']} | Rating: {suggestion['Rating']}")
 
+    #director filter feature added by @cwhitexula29
+    from director_file import DirecrtorFilter
 
+    director_filter = DirecrtorFilter(full_df)
 
+    director_input = input('\nEnter a director\'s name to filter movies: ').strip()
+    movies_by_director = director_filter.filter_by_director(director_input)
 
+    print("\n🎬 Movies by", director_input, "🎬")
+    if isinstance(movies_by_director, str):
+        print(movies_by_director)
+    else:
+        print(movies_by_director[['Title', 'Date', 'Genre', 'Rating']].to_string(index=False))
 
-
-
-
-
-
-    
-    
 if __name__ == "__main__":
     main()
-
-    
