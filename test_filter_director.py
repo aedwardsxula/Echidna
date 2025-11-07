@@ -38,3 +38,15 @@ class TestDirectorFilter(unittest.TestCase):
 
         self.assertIsInstance(result, str)
         self.assertIn("No movies found", result)
+
+    def test_filter_case_insensitive(self):
+        df = pd.DataFrame({
+            "Title": ["Inception"],
+            "Director": ["Christopher Nolan"]
+        })
+        filter_obj = DirectorFilter(df)
+
+        result = filter_obj.filter_by_director("christopher nolan")
+
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result.iloc[0]["Title"], "Inception")
