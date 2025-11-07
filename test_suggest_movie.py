@@ -15,4 +15,8 @@ class TestSuggestMovie(unittest.TestCase):
         self.suggester.add_movie("Interstellar")
         self.assertIn("Interstellar", self.suggester.get_all_movies(), "New movie should be added")
 
-    
+    def test_add_duplicate_movie(self):
+        self.suggester.add_movie("Inception")
+        movies = self.suggester.get_all_movies()
+        self.assertEqual(movies.count("Inception"), 1, "Duplicate movie should not be added")
+
