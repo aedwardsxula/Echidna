@@ -1,0 +1,30 @@
+import unittest
+from suggest_movie import SuggestMovie
+
+class TestSuggestMovie(unittest.TestCase):
+
+    def setUp(self):
+        self.movie_list = ["Inception", "Avatar", "Titanic"]
+        self.suggester = SuggestMovie(self.movie_list.copy())
+    
+    def test_suggest_random_movie(self):
+        result = self.suggester.suggest_random()
+        self.assertIn(result, self.movie_list, "Suggested movie should be from the list")
+
+    def test_add_movie(self):
+        self.suggester.add_movie("Interstellar")
+        self.assertIn("Interstellar", self.suggester.get_all_movies(), "New movie should be added")
+
+    def test_add_duplicate_movie(self):
+        self.suggester.add_movie("Inception")
+        movies = self.suggester.get_all_movies()
+        self.assertEqual(movies.count("Inception"), 1, "Duplicate movie should not be added")
+
+    def test_remove_movie(self):
+        self.suggester.remove_movie("Avatar")
+        self.assertNotIn("Avatar", self.suggester.get_all_movies(), "Movie should be removed")
+
+    def test_suggest_from_empty_list(self):
+        empty_suggester = SuggestMovie([])
+        result = empty_suggester.suggest_random()
+        self.assertEqual(result, "No movies available.", "Should return message when list is empty")
