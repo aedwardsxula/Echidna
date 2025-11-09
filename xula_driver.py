@@ -7,6 +7,8 @@ from bs4 import BeautifulSoup
 from requests import get
 import requests
 from Movie import Movie
+from Rank_show_duration import rank_tv_shows_by_duration
+
 
 
 def get_centennial_campaign_impact(url):
@@ -63,7 +65,7 @@ def print_welcome_message():
 
 
 def main():
-    
+
     campaign_data = get_centennial_campaign_impact("https://www.xula.edu/about/centennial.html")
     
     print(f"{campaign_data['title']}: {campaign_data['impact_text']}\n")
@@ -130,6 +132,13 @@ def main():
         print(movies_by_director)
     else:
         print(movies_by_director[['Title', 'Date', 'Genre', 'Rating']].to_string(index=False))
+
+
+    
+    
+
+
+
 
 if __name__ == "__main__":
     main()
