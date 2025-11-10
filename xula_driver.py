@@ -96,8 +96,20 @@ def main():
     
 
     full_df = pd.concat(all_movies, ignore_index=True)
-    print("Here is our movie data for ", user_input + ":")
-    print(full_df[user_input].to_string(index=False))
+    if user_input.strip().lower() == 'genre':
+        print("\n🎬 Movie Genres 🎬")
+        # Collect all genres in a single list
+        all_genres = []
+        for genre in full_df['Genre']:
+            if isinstance(genre, list):
+                all_genres.extend(genre)
+            else:
+                all_genres.append(genre)
+        # Print all genres in one line
+        print(', '.join(all_genres))
+    else: 
+        print("Here is our movie data for ", user_input + ":")
+        print(full_df[user_input].to_string(index=False))
 
     specific_input = input("Would you like to see a specific movie's data? (yes/no): ").strip().lower()
     if specific_input == 'yes':
