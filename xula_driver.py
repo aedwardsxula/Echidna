@@ -84,6 +84,7 @@ def main():
     print("Welcome to the IMDB Top Movies Data Display!")
     print()
     user_input = input('What would you like see?(Type "Title", "Date", "Runtime", "Genre", "Rating", "Metascore", "Description", "Director", "Stars", "Votes", "Gross"): ')
+    user_options = ["Title", "Date", "Runtime", "Genre", "Rating", "Metascore", "Description", "Director", "Stars", "Votes", "Gross"]
     print("You selected:", user_input)
 
     all_movies = []
@@ -107,7 +108,9 @@ def main():
                 all_genres.append(genre)
         # Print all genres in one line
         print(', '.join(all_genres))
-    else: 
+    elif user_input.strip().lower() not in user_options:
+        print(f"Invalid input. Next time please choose from the following options:{user_options}")
+    else:
         print("Here is our movie data for ", user_input + ":")
         print(full_df[user_input].to_string(index=False))
 
