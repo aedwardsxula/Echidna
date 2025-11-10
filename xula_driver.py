@@ -8,6 +8,16 @@ from requests import get
 import requests
 from Movie import Movie
 
+def find_movie_by_actor(movies_df, actor_name):
+    # Convert actor name to lowercase for case-insensitive comparison
+    actor_name_lower = actor_name.lower()
+    # Filter movies where the actor is in the Stars list
+    filtered_movies = movies_df[movies_df['Stars'].apply(
+        lambda stars: isinstance(stars, list) and 
+        any(actor_name_lower in star.lower() for star in stars)
+    )]
+    return filtered_movies
+
 def rank_shows_by_rating(shows_df):
     # Sort by rating and get only top 5 shows
     ranked_shows = shows_df.sort_values(by='Rating', ascending=False).head(5).reset_index(drop=True)
@@ -144,7 +154,18 @@ def main():
             print(specific_movie.to_string(index=False))
         else:
             print("Movie not found.")
+    print()
+    see_star = input("Would you like to find movies by a specific actor? (yes/no): ").strip().lower()
+    if see_star == 'yes':
+        actor_name = input('Enter the star\'s name: ').strip()
+        movies_with_actor = find_movie_by_actor(full_df, actor_name)
+        print(f"\n🎬 Movies featuring {actor_name} 🎬")
+        if not movies_with_actor.empty:
+            print(movies_with_actor[['Title', 'Date', 'Genre', 'Rating']].to_string(index=False))
+        else:
+            print(f"No movies found featuring {actor_name}.")
 
+    print()
     print("\nNow displaying top 5 TV shows ranked by rating!:")
     print(rank_shows_by_rating(full_df2))
 
