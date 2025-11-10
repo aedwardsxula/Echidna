@@ -1,4 +1,8 @@
-def __init__(self, csv_file):
+import pandas as pd
+from imdbData2 import IMDB 
+
+class RankMovieDuration:
+    def __init__(self, csv_file):
         self.df_raw = pd.read_csv(csv_file)
         self.movies_df = self._extract_movie_data()
 
@@ -15,11 +19,9 @@ def __init__(self, csv_file):
     def rank_by_duration(self, top_n=10):
         df = self.movies_df.copy()
 
-        # Clean and sort by runtime
         df["Runtime"] = pd.to_numeric(df["Runtime"], errors="coerce")
         df = df.dropna(subset=["Runtime"])
+
         ranked_movies = df.sort_values(by="Runtime", ascending=False)
 
-        # Return the top results
         return ranked_movies[["Title", "Date", "Runtime", "Genre", "Rating"]].head(top_n)
-

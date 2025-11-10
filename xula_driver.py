@@ -8,6 +8,8 @@ from requests import get
 import requests
 from Movie import Movie
 from Rank_show_duration import rank_tv_shows_by_duration
+from Rank_movie_duration import RankMovieDuration
+
 
 
 def find_movie_by_actor(movies_df, actor_name):
@@ -99,6 +101,13 @@ def main():
 
     print("\n--- Top 10 Longest TV Shows ---")
     print(top_tv_by_duration)
+
+    movie_ranker = RankMovieDuration("Movie_Data.csv")
+    top_movies_by_duration = movie_ranker.rank_by_duration(top_n=10)
+
+    print("\n--- Top 10 Longest Movies ---")
+    print(top_movies_by_duration)
+
 
 
 
