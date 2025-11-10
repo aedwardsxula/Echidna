@@ -82,16 +82,24 @@ def print_welcome_message():
 
 def main():
 
-    tv_df = pd.read_csv("TV_Data.csv")
+    tv_raw = pd.read_csv("TV_Data.csv")
     print("\n--- Loaded TV Data ---")
-    print(tv_df.head())
+    print(tv_raw.head())
+
+    all_tv = []
+
+    for html_content in tv_raw["html"]:
+        imdb_page = IMDB(html_content)
+        df_show = imdb_page.movieData()  
+        all_tv.append(df_show)
+
+    tv_df = pd.concat(all_tv, ignore_index=True)
+
+    top_tv_by_duration = rank_tv_shows_by_duration(tv_df, top_n=10)
 
     print("\n--- Top 10 Longest TV Shows ---")
-    top_tv_by_duration = rank_tv_shows_by_duration(tv_df, top_n=10)
     print(top_tv_by_duration)
 
-    top_tv_by_duration.to_csv("Top_TV_Shows_By_Duration.csv", index=False)
-    print("\nResults saved to 'Top_TV_Shows_By_Duration.csv'")
 
 
 
