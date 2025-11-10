@@ -8,6 +8,8 @@ from requests import get
 import requests
 from Movie import Movie
 from Rank_show_duration import rank_tv_shows_by_duration
+from Rank_movie_duration import RankMovieDuration
+
 
 
 def find_movie_by_actor(movies_df, actor_name):
@@ -82,19 +84,33 @@ def print_welcome_message():
 
 def main():
 
-    df_raw = pd.read_csv("Movie_Data.csv")
-    all_movies = []
+    tv_raw = pd.read_csv("TV_Data.csv")
+    print("\n--- Loaded TV Data ---")
+    print(tv_raw.head())
 
-    for html_content in df_raw['html']:
+    all_tv = []
+
+    for html_content in tv_raw["html"]:
         imdb_page = IMDB(html_content)
-        df_movie = imdb_page.movieData()  
-        all_movies.append(df_movie)
+        df_show = imdb_page.movieData()  
+        all_tv.append(df_show)
 
-    full_df = pd.concat(all_movies, ignore_index=True)
+    tv_df = pd.concat(all_tv, ignore_index=True)
 
-    top_tv = rank_tv_shows_by_duration(full_df)
-    print("\nTop TV Shows by Duration ")
-    print(top_tv)
+    top_tv_by_duration = rank_tv_shows_by_duration(tv_df, top_n=10)
+
+    print("\n--- Top 10 Longest TV Shows ---")
+    print(top_tv_by_duration)
+
+    movie_ranker = RankMovieDuration("Movie_Data.csv")
+    top_movies_by_duration = movie_ranker.rank_by_duration(top_n=10)
+
+    print("\n--- Top 10 Longest Movies ---")
+    print(top_movies_by_duration)
+
+
+
+
 
 
 
