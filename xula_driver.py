@@ -72,6 +72,11 @@ def main():
     
     campaign_data = get_centennial_campaign_impact("https://www.xula.edu/about/centennial.html")
     
+    print()
+    print("---------------------------------------------------------------------------------")
+    print("Get to know a little bit more about XULA before looking at our IMDB Data Display!")
+    print("---------------------------------------------------------------------------------")
+
     print(f"{campaign_data['title']}: {campaign_data['impact_text']}\n")
 
     csv_path = "Movie_Data.csv"
@@ -124,12 +129,13 @@ def main():
                 all_genres.append(genre)
         # Print all genres in one line
         print(', '.join(all_genres))
-    elif user_input.strip().lower() not in user_options:
+    elif user_input not in user_options:
         print(f"Invalid input. Next time please choose from the following options:{user_options}")
     else:
         print("Here is our movie data for ", user_input + ":")
         print(full_df[user_input].to_string(index=False))
 
+    print()
     specific_input = input("Would you like to see a specific movie's data? (yes/no): ").strip().lower()
     if specific_input == 'yes':
         movie_title = input('Enter the movie title: ').strip()
