@@ -10,6 +10,22 @@ from Movie import Movie
 from Rank_show_duration import rank_tv_shows_by_duration
 
 
+def find_movie_by_actor(movies_df, actor_name):
+    # Convert actor name to lowercase for case-insensitive comparison
+    actor_name_lower = actor_name.lower()
+    # Filter movies where the actor is in the Stars list
+    filtered_movies = movies_df[movies_df['Stars'].apply(
+        lambda stars: isinstance(stars, list) and 
+        any(actor_name_lower in star.lower() for star in stars)
+    )]
+    return filtered_movies
+
+def rank_shows_by_rating(shows_df):
+    # Sort by rating and get only top 5 shows
+    ranked_shows = shows_df.sort_values(by='Rating', ascending=False).head(5).reset_index(drop=True)
+    # Add 1 to index to start counting from 1
+    ranked_shows.index = ranked_shows.index + 1
+    return ranked_shows
 
 def get_centennial_campaign_impact(url):
         headers = {
@@ -85,11 +101,20 @@ def main():
 
     campaign_data = get_centennial_campaign_impact("https://www.xula.edu/about/centennial.html")
     
+    print()
+    print("---------------------------------------------------------------------------------")
+    print("Get to know a little bit more about XULA before looking at our IMDB Data Display!")
+    print("---------------------------------------------------------------------------------")
+
     print(f"{campaign_data['title']}: {campaign_data['impact_text']}\n")
 
     csv_path = "Movie_Data.csv"
         
     df = pd.read_csv(csv_path)
+
+    csv_path2 = "TV_Data.csv"
+        
+    df2 = pd.read_csv(csv_path2)
 
     #ascii art added by @cwhitexula29
     print(r"""
@@ -103,9 +128,11 @@ def main():
     print("Welcome to the IMDB Top Movies Data Display!")
     print()
     user_input = input('What would you like see?(Type "Title", "Date", "Runtime", "Genre", "Rating", "Metascore", "Description", "Director", "Stars", "Votes", "Gross"): ')
+    user_options = ["Title", "Date", "Runtime", "Genre", "Rating", "Metascore", "Description", "Director", "Stars", "Votes", "Gross"]
     print("You selected:", user_input)
 
     all_movies = []
+    all_shows = []
 
 
     for html_content in df['html']:
@@ -113,11 +140,31 @@ def main():
         movie_df = imdb_page.movieData()
         all_movies.append(movie_df)
     
-
+    for html_content2 in df2['html']:
+        imdb_page2 = IMDB(html_content2)
+        show_df = imdb_page2.movieData()
+        all_shows.append(show_df)
+    
+    full_df2 = pd.concat(all_shows, ignore_index=True)
     full_df = pd.concat(all_movies, ignore_index=True)
-    print("Here is our movie data for ", user_input + ":")
-    print(full_df[user_input].to_string(index=False))
+    if user_input.strip().lower() == 'genre':
+        print("\n🎬 Movie Genres 🎬")
+        # Collect all genres in a single list
+        all_genres = []
+        for genre in full_df['Genre']:
+            if isinstance(genre, list):
+                all_genres.extend(genre)
+            else:
+                all_genres.append(genre)
+        # Print all genres in one line
+        print(', '.join(all_genres))
+    elif user_input not in user_options:
+        print(f"Invalid input. Next time please choose from the following options:{user_options}")
+    else:
+        print("Here is our movie data for ", user_input + ":")
+        print(full_df[user_input].to_string(index=False))
 
+    print()
     specific_input = input("Would you like to see a specific movie's data? (yes/no): ").strip().lower()
     if specific_input == 'yes':
         movie_title = input('Enter the movie title: ').strip()
@@ -126,6 +173,20 @@ def main():
             print(specific_movie.to_string(index=False))
         else:
             print("Movie not found.")
+    print()
+    see_star = input("Would you like to find movies by a specific actor? (yes/no): ").strip().lower()
+    if see_star == 'yes':
+        actor_name = input('Enter the star\'s name: ').strip()
+        movies_with_actor = find_movie_by_actor(full_df, actor_name)
+        print(f"\n🎬 Movies featuring {actor_name} 🎬")
+        if not movies_with_actor.empty:
+            print(movies_with_actor[['Title', 'Date', 'Genre', 'Rating']].to_string(index=False))
+        else:
+            print(f"No movies found featuring {actor_name}.")
+
+    print()
+    print("\nNow displaying top 5 TV shows ranked by rating!:")
+    print(rank_shows_by_rating(full_df2))
 
     #random movie feature added by @cwhitexula29
     from random_movie import RandomMovie

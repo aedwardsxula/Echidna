@@ -1,0 +1,181 @@
+html
+"<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>IT: Welcome to Derry</a>
+            <span class='lister-item-year text-muted unbold'>(2025-)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>60 min</span> <span class='genre'>Body Horror, Monster Horror, Period Drama, Psychological Horror, Slasher Horror, Teen Horror, Fantasy, Horror</span></p>
+        <div class='ratings-bar'>
+            <strong>7.8</strong>
+        </div>
+        <p class='text-muted'>In 1962, a couple with their son move to Derry, Maine just as a young boy disappears. With their arrival, very bad things begin to happen in the town.</p>
+        <p class=''>Creator: Jason Ruchs, Andy Muschietti, Barbara Muschietti | Stars: JOban Adepo, James Remar, Matilda Lawler</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='4500000'>4,500,000</span>
+            <span name='nv' data-value='150000000'>$150.0M</span>
+        </p>
+    </div>
+</div>"
+"<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>The Witcher</a>
+            <span class='lister-item-year text-muted unbold'>(2019-)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>60 min</span> <span class='genre'>Action Epic, Adventure Epic, Dark Fantasy, Epic, Fantasy Epic, One-Person-Army Action, Sword & Sorcery, Action, Adventure, Drama</span></p>
+        <div class='ratings-bar'>
+            <strong>7.9</strong>
+        </div>
+        <p class='text-muted'>Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.</p>
+        <p class=''>Creator: Lauren Schmidt Hissarich| Stars: Freya Allan, Anya Chalotram Eamon Farren</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='2500000'>2,500,000</span>
+            <span name='nv' data-value='670000000'>$670.0M</span>
+        </p>
+    </div>
+</div>"
+"<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Stranger Things</a>
+            <span class='lister-item-year text-muted unbold'>(2016-2025)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>60 min</span> <span class='genre'>Coming-of-Age, Dark Fantasy, Fantasy Epic, Monster Horror, Sci-Fi Epic, Supernatural Fantasy, Supernatural Horror,Teen Horror, Drama, Fantasy</span></p>
+        <div class='ratings-bar'>
+            <strong>8.6</strong>
+        </div>
+        <p class='text-muted'>In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries.</p>
+        <p class=''>Creator: Matt Duffer, Ross Duffer| Stars: Winona Ryder, David Harbour, Finn Wolfhard</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='5700000'>5,700,000</span>
+            <span name='nv' data-value='900000000'>$900.0M</span>
+        </p>
+    </div>
+</div>"
+"<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Nobody Wants This</a>
+            <span class='lister-item-year text-muted unbold'>(2024-)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>30 min</span> <span class='genre'>Feel-Good Romance, Romantic Comedy, Comedy, Drama, Romance</span></p>
+        <div class='ratings-bar'>
+            <strong>7.8</strong>
+        </div>
+        <p class='text-muted'>An agnostic sex podcaster and a newly single rabbi fall in love; discovering if their relationship can survive their wildly different lives and meddling families.</p>
+        <p class=''>Creator: Erin Foster| Stars: Kristen Bell, Adam Brody, Justine Lupe</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='1400000'>1,400,000</span>
+            <span name='nv' data-value='110000000'>$110.0M</span>
+        </p>
+    </div>
+</div>"
+"<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>South Park</a>
+            <span class='lister-item-year text-muted unbold'>(1997-)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>22 min</span> <span class='genre'>Adult Animation, Computer Animation, Dark Comedy, Parody, Raunchy Comedy, Satire, Sitcom, Animation, Comedy</span></p>
+        <div class='ratings-bar'>
+            <strong>8.7</strong>
+        </div>
+        <p class='text-muted'>The misadventures of four foul-mouthed, dirty-minded, irreverent grade-schoolers who live in the quiet, dysfunctional mountain town of South Park, Colorado.</p>
+        <p class=''>Creator: Trey Parker, Matt Stone, Brian Graden| Stars: Try Parker, Matt Stone, Mona Marshall</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='8800000'>8,800,000</span>
+            <span name='nv' data-value='890000000'>$890.0M</span>
+        </p>
+    </div>
+</div>"
+"<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Slow Horses</a>
+            <span class='lister-item-year text-muted unbold'>(2022-)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>50 min</span> <span class='genre'>Dark Comedy, Spy, Drama, Thriller</span></p>
+        <div class='ratings-bar'>
+            <strong>8.3</strong>
+        </div>
+        <p class='text-muted'>A dysfunctional team of MI5 agents navigate the espionage world's smoke and mirrors to defend the UK from sinister forces.</p>
+        <p class=''>Creator: N/A| Stars: Gary Oldman, Jack Lowden, Kristin Scott Thomas</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='7500000'>7,500,000</span>
+            <span name='nv' data-value='270000000'>$270.0M</span>
+        </p>
+    </div>
+</div>"
+"<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Down Cemetery Road</a>
+            <span class='lister-item-year text-muted unbold'>(2025-)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>50 min</span> <span class='genre'>Psychological Thriller, Thriller</span></p>
+        <div class='ratings-bar'>
+            <strong>7.2</strong>
+        </div>
+        <p class='text-muted'>Sarah Tucker obsessively searches for a missing neighbor girl after an explosion. Aided by PI Zoë Boehm, they uncover a conspiracy involving presumed dead still living and living dying, embroiling them in a complex web.</p>
+        <p class=''>Creator: N/A| Stars: Emma Thompson, Ruth Wilson, Adeel Akhtar</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='1300000'>1,300,000</span>
+            <span name='nv' data-value='140000000'>$140.0M</span>
+        </p>
+    </div>
+</div>"
+"<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>The Asset</a>
+            <span class='lister-item-year text-muted unbold'>(2025-)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>50 min</span> <span class='genre'>Danish, Crime, Drama, Thriller</span></p>
+        <div class='ratings-bar'>
+            <strong>7.1</strong>
+        </div>
+        <p class='text-muted'>Agent Tea infiltrates a criminal gang, befriending Ashley, the girlfriend of ringleader Miran. Witnessing Ashley's stark reality, Tea is torn between her mission and a desire to help her escape Miran's control.</p>
+        <p class=''>Creator: N/A| Stars: Clara Dessau, Maria Cordesen, Afshin Firouzi</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='3500000'>3,500,000</span>
+            <span name='nv' data-value='240000000'>$240.0M</span>
+        </p>
+    </div>
+</div>"
+"<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Monster</a>
+            <span class='lister-item-year text-muted unbold'>(2022-)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>60 min</span> <span class='genre'>Docudrama, Serial Killer, True Crime, Biography, Crime, Drama, Thriller</span></p>
+        <div class='ratings-bar'>
+            <strong>7.8</strong>
+        </div>
+        <p class='text-muted'>Chronicles the real life stories of infamous serial killers, presenting several different perspectives of their cases.</p>
+        <p class=''>Creator: Ian Brennan, Ryan Murphy| Stars: Evan Peters, Richard Jenkins, Cooper Koch</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='7700000'>7,700,000</span>
+            <span name='nv' data-value='560000000'>$560.0M</span>
+        </p>
+    </div>
+</div>"
+"<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>The Diplomat</a>
+            <span class='lister-item-year text-muted unbold'>(2023-)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>50 min</span> <span class='genre'>Political Drama, Drama, Thrillerr</span></p>
+        <div class='ratings-bar'>
+            <strong>8.0</strong>
+        </div>
+        <p class='text-muted'>In the midst of an international crisis, Kate Wyler, a career diplomat, lands in a high-profile job for which she is not suited, with tectonic implications for her marriage and her political future.</p>
+        <p class=''>Creator: Debora Chan| Stars: Keri Russell, Rufus Sewell, David Gyasi</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='4700000'>4,700,000</span>
+            <span name='nv' data-value='230000000'>$230.0M</span>
+        </p>
+    </div>
+</div>"
