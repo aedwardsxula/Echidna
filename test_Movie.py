@@ -40,3 +40,32 @@ class TestMovie(unittest.TestCase):
         self.assertIn("Sci-Fi", movie.genre)
         self.assertIn("Action", movie.genre)
         self.assertIn("Thriller", movie.genre)
+
+    def test_metascore_range(self):
+        """Test 6: Verify that metascore must be between 0 and 100."""
+        with self.assertRaises(ValueError):
+            movie = Movie("Test Movie", 2023, 7.0, "Drama", 101, "Test Director")
+        with self.assertRaises(ValueError):
+            movie = Movie("Test Movie", 2023, 7.0, "Drama", -1, "Test Director")
+
+    def test_empty_title(self):
+        """Test 7: Verify movie can be created with an empty title."""
+        movie = Movie("", 2023, 7.0, "Drama", 70, "Test Director")
+        self.assertEqual(movie.title, "")
+
+    def test_decimal_rating(self):
+        """Test 8: Verify movie can handle decimal ratings."""
+        movie = Movie("Test Movie", 2023, 7.5, "Drama", 70, "Test Director")
+        self.assertEqual(movie.rating, 7.5)
+
+    def test_same_movie_different_objects(self):
+        """Test 9: Verify two movies with same data are separate objects."""
+        movie1 = Movie("Inception", 2010, 8.8, "Sci-Fi", 74, "Christopher Nolan")
+        movie2 = Movie("Inception", 2010, 8.8, "Sci-Fi", 74, "Christopher Nolan")
+        self.assertEqual(str(movie1), str(movie2))
+        self.assertIsNot(movie1, movie2)
+
+    def test_empty_director(self):
+        """Test 10: Verify movie can be created with an empty director."""
+        movie = Movie("Test Movie", 2023, 7.0, "Drama", 70, "")
+        self.assertEqual(movie.director, "")
