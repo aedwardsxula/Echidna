@@ -8,6 +8,12 @@ from requests import get
 import requests
 from Movie import Movie
 
+def rank_shows_by_rating(shows_df):
+    # Sort by rating and get only top 5 shows
+    ranked_shows = shows_df.sort_values(by='Rating', ascending=False).head(5).reset_index(drop=True)
+    # Add 1 to index to start counting from 1
+    ranked_shows.index = ranked_shows.index + 1
+    return ranked_shows
 
 def get_centennial_campaign_impact(url):
         headers = {
@@ -72,6 +78,10 @@ def main():
         
     df = pd.read_csv(csv_path)
 
+    csv_path2 = "TV_Data.csv"
+        
+    df2 = pd.read_csv(csv_path2)
+
     #ascii art added by @cwhitexula29
     print(r"""
  __     __    __     _____     ______        ______   ______     ______      __    __     ______     __   __   __     ______     ______    
@@ -88,6 +98,7 @@ def main():
     print("You selected:", user_input)
 
     all_movies = []
+    all_shows = []
 
 
     for html_content in df['html']:
@@ -95,7 +106,12 @@ def main():
         movie_df = imdb_page.movieData()
         all_movies.append(movie_df)
     
-
+    for html_content2 in df2['html']:
+        imdb_page2 = IMDB(html_content2)
+        show_df = imdb_page2.movieData()
+        all_shows.append(show_df)
+    
+    full_df2 = pd.concat(all_shows, ignore_index=True)
     full_df = pd.concat(all_movies, ignore_index=True)
     if user_input.strip().lower() == 'genre':
         print("\n🎬 Movie Genres 🎬")
@@ -122,6 +138,9 @@ def main():
             print(specific_movie.to_string(index=False))
         else:
             print("Movie not found.")
+
+    print("\nNow displaying top 5 TV shows ranked by rating!:")
+    print(rank_shows_by_rating(full_df2))
 
     #random movie feature added by @cwhitexula29
     from random_movie import RandomMovie
