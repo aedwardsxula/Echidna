@@ -1,6 +1,43 @@
-Title,Year,Runtime,Genre,Rating,Metascore,Description,Director,Stars,Votes,Gross
-The Asset,2025,110 min,"Action, Thriller, Spy",7.3,78,An elite CIA operative goes rogue after uncovering a covert operation designed to destabilize foreign governments.,David Leitch,"Jessica Chastain, John Boyega, Henry Cavill",1850000,$520.0M
-The Witcher,2023,60 min,"Action, Adventure, Fantasy, Drama",8.1,82,A mutated monster hunter for hire struggles to find his place in a world where people often prove more wicked than beasts.,Lauren Schmidt Hissrich,"Henry Cavill, Anya Chalotra, Freya Allan",2700000,$310.0M
-The Diplomat,2024,55 min,"Drama, Political, Thriller",7.9,80,A seasoned diplomat navigates the complexities of international relations while balancing her turbulent personal life.,Debora Cahn,"Keri Russell, Rufus Sewell, David Gyasi",1600000,$215.0M
-Ms. Rachel,2025,25 min,"Family, Educational, Musical",9,88,"A joyful educational series where Ms. Rachel uses music and play to help toddlers learn speech, language, and social skills.",Rachel Griffin Accurso,"Rachel Griffin Accurso, Aron Accurso",1200000,$45.0M
-Nobody Wants This: Season 2,2025,48 min,"Comedy, Drama, Romance",7.4,74,"After an unexpected viral scandal, Sophie must rebuild her career and relationships in the chaotic world of modern media.",Whitney Cummings,"Whitney Cummings, Chris D’Elia, Michelle Buteau",890000,$60.0M
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Year</th>
+      <th>Runtime</th>
+      <th>Genre</th>
+      <th>Rating</th>
+      <th>Metascore</th>
+      <th>Description</th>
+      <th>Director</th>
+      <th>Stars</th>
+      <th>Votes</th>
+      <th>Gross</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TQ</td>
+      <td>Family, Educational, Musical</td>
+      <td>9</td>
+      <td>88</td>
+      <td>A joyful educational series where Ms. Rachel uses music and play to help toddlers learn speech, language, and social skills.</td>
+      <td>Rachel Griffin Accurso</td>
+      <td>Rachel Griffin Accurso, Aron Accurso</td>
+      <td>1,200,000</td>
+      <td>$45.0M</td>
+    </tr>
+    <tr>
+      <td>Nobody Wants This: Season 2</td>
+      <td>2025</td>
+      <td>48 min</td>
+      <td>Comedy, Drama, Romance</td>
+      <td>7.4</td>
+      <td>74</td>
+      <td>After an unexpected viral scandal, Sophie must rebuild her career and relationships in the chaotic world of modern media.</td>
+      <td>Whitney Cummings</td>
+      <td>Whitney Cummings, Chris D&#8217;Elia, Michelle Buteau</td>
+      <td>890,000</td>
+      <td>$60.0M</td>
+    </tr>
+  </tbody>
+</table>
