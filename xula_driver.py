@@ -7,6 +7,8 @@ from bs4 import BeautifulSoup
 from requests import get
 import requests
 from Movie import Movie
+from Rank_show_duration import rank_tv_shows_by_duration
+
 
 def find_movie_by_actor(movies_df, actor_name):
     # Convert actor name to lowercase for case-insensitive comparison
@@ -79,7 +81,24 @@ def print_welcome_message():
 
 
 def main():
-    
+
+    df_raw = pd.read_csv("Movie_Data.csv")
+    all_movies = []
+
+    for html_content in df_raw['html']:
+        imdb_page = IMDB(html_content)
+        df_movie = imdb_page.movieData()  
+        all_movies.append(df_movie)
+
+    full_df = pd.concat(all_movies, ignore_index=True)
+
+    top_tv = rank_tv_shows_by_duration(full_df)
+    print("\nTop TV Shows by Duration ")
+    print(top_tv)
+
+
+
+
     campaign_data = get_centennial_campaign_impact("https://www.xula.edu/about/centennial.html")
     
     print()
@@ -191,6 +210,13 @@ def main():
         print(movies_by_director)
     else:
         print(movies_by_director[['Title', 'Date', 'Genre', 'Rating']].to_string(index=False))
+
+
+    
+    
+
+
+
 
 if __name__ == "__main__":
     main()
