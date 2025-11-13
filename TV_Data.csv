@@ -179,3 +179,97 @@ html
         </p>
     </div>
 </div>"
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>The Last of Us</a>
+            <span class='lister-item-year text-muted unbold'>(2023-)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>60 min</span> <span class='genre'>Action Adventure, Post-Apocalyptic Drama, Survival Horror, Drama, Sci-Fi, Thriller</span></p>
+        <div class='ratings-bar'>
+            <strong>8.9</strong>
+        </div>
+        <p class='text-muted'>In a world ravaged by a deadly fungal outbreak, hardened survivor Joel is tasked with smuggling a teenage girl, Ellie, across the United States. Their bond becomes humanity’s last hope.</p>
+        <p class=''>Creator: Craig Mazin, Neil Druckmann | Stars: Pedro Pascal, Bella Ramsey, Gabriel Luna</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='6400000'>6,400,000</span>
+            <span name='nv' data-value='880000000'>$880.0M</span>
+        </p>
+    </div>
+</div>
+
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>The Bear</a>
+            <span class='lister-item-year text-muted unbold'>(2022-)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>35 min</span> <span class='genre'>Drama, Comedy, Culinary, Slice of Life</span></p>
+        <div class='ratings-bar'>
+            <strong>8.7</strong>
+        </div>
+        <p class='text-muted'>A young chef from the fine dining world returns home to run his family’s sandwich shop in Chicago after a tragedy, struggling to balance chaos, grief, and creative purpose.</p>
+        <p class=''>Creator: Christopher Storer | Stars: Jeremy Allen White, Ayo Edebiri, Ebon Moss-Bachrach</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='5100000'>5,100,000</span>
+            <span name='nv' data-value='390000000'>$390.0M</span>
+        </p>
+    </div>
+</div>
+
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>House of the Dragon</a>
+            <span class='lister-item-year text-muted unbold'>(2022-)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>58 min</span> <span class='genre'>Dark Fantasy, Medieval Epic, Political Drama, Fantasy, Drama</span></p>
+        <div class='ratings-bar'>
+            <strong>8.4</strong>
+        </div>
+        <p class='text-muted'>Set 200 years before the events of Game of Thrones, the Targaryen dynasty fights among itself for control of the Iron Throne as alliances are forged and dragons take to the skies.</p>
+        <p class=''>Creator: Ryan J. Condal, George R.R. Martin | Stars: Emma D’Arcy, Matt Smith, Olivia Cooke</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='8900000'>8,900,000</span>
+            <span name='nv' data-value='1200000000'>$1.2B</span>
+        </p>
+    </div>
+</div>
+
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Abbott Elementary</a>
+            <span class='lister-item-year text-muted unbold'>(2021-)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>22 min</span> <span class='genre'>Mockumentary, Workplace Comedy, Satire, Comedy</span></p>
+        <div class='ratings-bar'>
+            <strong>8.2</strong>
+        </div>
+        <p class='text-muted'>A group of dedicated, passionate teachers and a slightly tone-deaf principal navigate the challenges of running a public school in Philadelphia.</p>
+        <p class=''>Creator: Quinta Brunson | Stars: Quinta Brunson, Tyler James Williams, Janelle James</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='3900000'>3,900,000</span>
+            <span name='nv' data-value='310000000'>$310.0M</span>
+        </p>
+    </div>
+</div>
+
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Bridgerton</a>
+            <span class='lister-item-year text-muted unbold'>(2020-)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>58 min</span> <span class='genre'>Period Drama, Romance, High Society, Historical Fiction, Drama</span></p>
+        <div class='ratings-bar'>
+            <strong>7.8</strong>
+        </div>
+        <p class='text-muted'>Wealth, lust, and betrayal are set against the backdrop of Regency-era London, seen through the eyes of the powerful Bridgerton family.</p>
+        <p class=''>Creator: Chris Van Dusen | Stars: Nicola Coughlan, Jonathan Bailey, Phoebe Dynevor</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='6200000'>6,200,000</span>
+            <span name='nv' data-value='720000000'>$720.0M</span>
+        </p>
+    </div>
+</div>
