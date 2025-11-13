@@ -1,13 +1,8 @@
 html
-"<div id='main'>
-    <div class='lister-item mode-advanced'>
-        <h3 class='lister-item-header'>
-            <a>A House of Dynamite</a>
-            <span class='lister-item-year text-muted unbold'>(2025)</span>
-        </h3>
-        <p class='text-muted '><span class='runtime'>112 min</span> <span class='genre'>Disaster, Political Drama, Political Thriller, Drama, Thriller</span></p>
+"<div idss='text-muted '><span class='runtime'>112 min</span> <span class='genre'>Disaster, Political Drama, Political Thriller, Drama, Thriller</span></p>
         <div class='ratings-bar'>
             <strong>6.6</strong>
+         
             <span class='metascore favorable'>75</span>
         </div>
         <p class='text-muted'>When a single, unattributed missile is launched at the United States, a race begins to determine who is responsible and how to respond.</p>
@@ -19,7 +14,13 @@ html
     </div>
 </div>"
 "<div id='main'>
+    <div class='lister-item mo='main'>
     <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>A House of Dynamite</a>
+            <span class='lister-item-year text-muted unbold'>(2025)</span>
+        </h3>
+        <p clade-advanced'>
         <h3 class='lister-item-header'>
             <a>Weapons</a>
             <span class='lister-item-year text-muted unbold'>(2025)</span>
@@ -37,3 +38,202 @@ html
         </p>
     </div>
 </div>"
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Moana</a>
+            <span class='lister-item-year text-muted unbold'>(2016)</span>
+        </h3>
+        <p class='text-muted'><span class='runtime'>107 min</span> <span class='genre'>Animation, Adventure, Family</span></p>
+        <div class='ratings-bar'>
+            <strong>7.6</strong>
+            <span class='metascore favorable'>81</span>
+        </div>
+        <p class='text-muted'>In Ancient Polynesia, a spirited teenager sails out on a daring mission to save her people.</p>
+        <p class=''>Director: Ron Clements, John Musker | Stars: Auli'i Cravalho, Dwayne Johnson, Rachel House</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='350000'>350,000</span>
+            <span name='nv' data-value='643000000'>$643.0M</span>
+        </p>
+    </div>
+</div>
+
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Frozen</a>
+            <span class='lister-item-year text-muted unbold'>(2013)</span>
+        </h3>
+        <p class='text-muted'><span class='runtime'>102 min</span> <span class='genre'>Animation, Adventure, Comedy</span></p>
+        <div class='ratings-bar'>
+            <strong>7.4</strong>
+            <span class='metascore favorable'>75</span>
+        </div>
+        <p class='text-muted'>When the newly crowned Queen Elsa accidentally uses her power to turn things into ice, her sister Anna sets out to save their kingdom.</p>
+        <p class=''>Director: Chris Buck, Jennifer Lee | Stars: Kristen Bell, Idina Menzel, Jonathan Groff</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='610000'>610,000</span>
+            <span name='nv' data-value='1280000000'>$1.28B</span>
+        </p>
+    </div>
+</div>
+
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>The Lion King</a>
+            <span class='lister-item-year text-muted unbold'>(1994)</span>
+        </h3>
+        <p class='text-muted'><span class='runtime'>88 min</span> <span class='genre'>Animation, Adventure, Drama</span></p>
+        <div class='ratings-bar'>
+            <strong>8.5</strong>
+            <span class='metascore favorable'>88</span>
+        </div>
+        <p class='text-muted'>Lion prince Simba flees his kingdom only to learn the true meaning of responsibility and bravery.</p>
+        <p class=''>Director: Roger Allers, Rob Minkoff | Stars: Matthew Broderick, Jeremy Irons, James Earl Jones</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='1100000'>1,100,000</span>
+            <span name='nv' data-value='968000000'>$968.0M</span>
+        </p>
+    </div>
+</div>
+
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Encanto</a>
+            <span class='lister-item-year text-muted unbold'>(2021)</span>
+        </h3>
+        <p class='text-muted'><span class='runtime'>102 min</span> <span class='genre'>Animation, Comedy, Family</span></p>
+        <div class='ratings-bar'>
+            <strong>7.2</strong>
+            <span class='metascore favorable'>75</span>
+        </div>
+        <p class='text-muted'>A Colombian teenage girl has to face the frustration of being the only one in her family without magical powers.</p>
+        <p class=''>Director: Jared Bush, Byron Howard | Stars: Stephanie Beatriz, María Cecilia Botero, John Leguizamo</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='310000'>310,000</span>
+            <span name='nv' data-value='257000000'>$257.0M</span>
+        </p>
+    </div>
+</div>
+
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Aladdin</a>
+            <span class='lister-item-year text-muted unbold'>(1992)</span>
+        </h3>
+        <p class='text-muted'><span class='runtime'>90 min</span> <span class='genre'>Animation, Adventure, Comedy</span></p>
+        <div class='ratings-bar'>
+            <strong>8.0</strong>
+            <span class='metascore favorable'>86</span>
+        </div>
+        <p class='text-muted'>A kind-hearted street urchin and a power-hungry Grand Vizier vie for a magic lamp that has the power to make their deepest wishes come true.</p>
+        <p class=''>Director: Ron Clements, John Musker | Stars: Scott Weinger, Robin Williams, Linda Larkin</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='600000'>600,000</span>
+            <span name='nv' data-value='504000000'>$504.0M</span>
+        </p>
+    </div>
+</div>
+
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Beauty and the Beast</a>
+            <span class='lister-item-year text-muted unbold'>(1991)</span>
+        </h3>
+        <p class='text-muted'><span class='runtime'>84 min</span> <span class='genre'>Animation, Family, Fantasy</span></p>
+        <div class='ratings-bar'>
+            <strong>8.0</strong>
+            <span class='metascore favorable'>95</span>
+        </div>
+        <p class='text-muted'>A young woman whose father has been imprisoned by a terrifying beast offers herself in his place.</p>
+        <p class=''>Director: Gary Trousdale, Kirk Wise | Stars: Paige O’Hara, Robby Benson, Richard White</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='500000'>500,000</span>
+            <span name='nv' data-value='440000000'>$440.0M</span>
+        </p>
+    </div>
+</div>
+
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Tangled</a>
+            <span class='lister-item-year text-muted unbold'>(2010)</span>
+        </h3>
+        <p class='text-muted'><span class='runtime'>100 min</span> <span class='genre'>Animation, Adventure, Comedy</span></p>
+        <div class='ratings-bar'>
+            <strong>7.7</strong>
+            <span class='metascore favorable'>71</span>
+        </div>
+        <p class='text-muted'>The magically long-haired Rapunzel has spent her entire life in a tower, but now that a runaway thief has stumbled upon her, she is about to discover the world for the first time.</p>
+        <p class=''>Director: Nathan Greno, Byron Howard | Stars: Mandy Moore, Zachary Levi, Donna Murphy</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='470000'>470,000</span>
+            <span name='nv' data-value='592000000'>$592.0M</span>
+        </p>
+    </div>
+</div>
+
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Coco</a>
+            <span class='lister-item-year text-muted unbold'>(2017)</span>
+        </h3>
+        <p class='text-muted'><span class='runtime'>105 min</span> <span class='genre'>Animation, Adventure, Family</span></p>
+        <div class='ratings-bar'>
+            <strong>8.4</strong>
+            <span class='metascore favorable'>81</span>
+        </div>
+        <p class='text-muted'>Aspiring musician Miguel, confronted with his family's ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather.</p>
+        <p class=''>Director: Lee Unkrich, Adrian Molina | Stars: Anthony Gonzalez, Gael García Bernal, Benjamin Bratt</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='590000'>590,000</span>
+            <span name='nv' data-value='814000000'>$814.0M</span>
+        </p>
+    </div>
+</div>
+
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Zootopia</a>
+            <span class='lister-item-year text-muted unbold'>(2016)</span>
+        </h3>
+        <p class='text-muted'><span class='runtime'>108 min</span> <span class='genre'>Animation, Adventure, Comedy</span></p>
+        <div class='ratings-bar'>
+            <strong>8.0</strong>
+            <span class='metascore favorable'>78</span>
+        </div>
+        <p class='text-muted'>In a city of anthropomorphic animals, a rookie bunny cop and a cynical con artist fox must work together to uncover a conspiracy.</p>
+        <p class=''>Director: Byron Howard, Rich Moore | Stars: Ginnifer Goodwin, Jason Bateman, Idris Elba</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='610000'>610,000</span>
+            <span name='nv' data-value='1024000000'>$1.02B</span>
+        </p>
+    </div>
+</div>
+
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Inside Out</a>
+            <span class='lister-item-year text-muted unbold'>(2015)</span>
+        </h3>
+        <p class='text-muted'><span class='runtime'>95 min</span> <span class='genre'>Animation, Adventure, Comedy</span></p>
+        <div class='ratings-bar'>
+            <strong>8.1</strong>
+            <span class='metascore favorable'>94</span>
+        </div>
+        <p class='text-muted'>After young Riley is uprooted from her Midwest life and moved to San Francisco, her emotions conflict on how to navigate a new city and school.</p>
+        <p class=''>Director: Pete Docter, Ronnie Del Carmen | Stars: Amy Poehler, Phyllis Smith, Richard Kind</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='750000'>750,000</span>
+            <span name='nv' data-value='857000000'>$857.0M</span>
+        </p>
+    </div>
+</div>
