@@ -37,3 +37,202 @@ html
         </p>
     </div>
 </div>"
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Shadow of the Titans</a>
+            <span class='lister-item-year text-muted unbold'>(2025)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>140 min</span> <span class='genre'>Action, Adventure, Fantasy, Sci-Fi</span></p>
+        <div class='ratings-bar'>
+            <strong>8.1</strong>
+            <span class='metascore favorable'>84</span>
+        </div>
+        <p class='text-muted'>In a futuristic realm, ancient gods awaken to reclaim the world, forcing humans and heroes to fight for survival against unstoppable powers.</p>
+        <p class=''>Director: Ava DuVernay | Stars: Tom Hardy, Zendaya, Benedict Cumberbatch</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='2,600,000'>2,600,000</span>
+            <span name='nv' data-value='980000000'>$980.0M</span>
+        </p>
+    </div>
+</div>
+
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Neon Horizon</a>
+            <span class='lister-item-year text-muted unbold'>(2025)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>125 min</span> <span class='genre'>Sci-Fi, Thriller, Mystery</span></p>
+        <div class='ratings-bar'>
+            <strong>7.8</strong>
+            <span class='metascore favorable'>79</span>
+        </div>
+        <p class='text-muted'>In a city powered by advanced AI, a detective races to uncover a conspiracy that could destroy humanity’s understanding of reality.</p>
+        <p class=''>Director: Denis Villeneuve | Stars: Florence Pugh, Timothée Chalamet, Oscar Isaac</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='1,750,000'>1,750,000</span>
+            <span name='nv' data-value='680000000'>$680.0M</span>
+        </p>
+    </div>
+</div>
+
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Crimson Tide: Reborn</a>
+            <span class='lister-item-year text-muted unbold'>(2025)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>118 min</span> <span class='genre'>Action, Drama, Military Thriller</span></p>
+        <div class='ratings-bar'>
+            <strong>7.6</strong>
+            <span class='metascore favorable'>77</span>
+        </div>
+        <p class='text-muted'>A submarine crew faces betrayal and moral dilemmas when a rogue admiral orders a nuclear strike that could ignite global war.</p>
+        <p class=''>Director: Kathryn Bigelow | Stars: Chris Pine, Emily Blunt, Mahershala Ali</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='1,200,000'>1,200,000</span>
+            <span name='nv' data-value='420000000'>$420.0M</span>
+        </p>
+    </div>
+</div>
+
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Quantum Rift</a>
+            <span class='lister-item-year text-muted unbold'>(2025)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>132 min</span> <span class='genre'>Sci-Fi, Adventure, Action</span></p>
+        <div class='ratings-bar'>
+            <strong>7.9</strong>
+            <span class='metascore favorable'>82</span>
+        </div>
+        <p class='text-muted'>A physicist and a soldier are forced to navigate multiple realities to prevent a catastrophic rift from destroying the universe.</p>
+        <p class=''>Director: Christopher Nolan | Stars: John David Washington, Ana de Armas, Oscar Isaac</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='2,000,000'>2,000,000</span>
+            <span name='nv' data-value='790000000'>$790.0M</span>
+        </p>
+    </div>
+</div>
+
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Silent Echoes</a>
+            <span class='lister-item-year text-muted unbold'>(2025)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>110 min</span> <span class='genre'>Horror, Psychological Thriller, Mystery</span></p>
+        <div class='ratings-bar'>
+            <strong>7.3</strong>
+            <span class='metascore favorable'>74</span>
+        </div>
+        <p class='text-muted'>A psychiatrist becomes trapped in a remote town where the residents’ nightmares begin to manifest in reality.</p>
+        <p class=''>Director: Jordan Peele | Stars: Lupita Nyong’o, Lakeith Stanfield, Toni Collette</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='1,100,000'>1,100,000</span>
+            <span name='nv' data-value='390000000'>$390.0M</span>
+        </p>
+    </div>
+</div>
+
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Celestial Wars</a>
+            <span class='lister-item-year text-muted unbold'>(2025)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>150 min</span> <span class='genre'>Action, Adventure, Sci-Fi, Space Opera</span></p>
+        <div class='ratings-bar'>
+            <strong>8.4</strong>
+            <span class='metascore favorable'>88</span>
+        </div>
+        <p class='text-muted'>Two rival space fleets race to control a newly discovered planet, forcing alliances and betrayals that will decide the galaxy’s future.</p>
+        <p class=''>Director: J.J. Abrams | Stars: Daisy Ridley, John Boyega, Oscar Isaac</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='3,000,000'>3,000,000</span>
+            <span name='nv' data-value='1,050,000,000'>$1.05B</span>
+        </p>
+    </div>
+</div>
+
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Crimson Horizon</a>
+            <span class='lister-item-year text-muted unbold'>(2025)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>138 min</span> <span class='genre'>Action, Thriller, Drama</span></p>
+        <div class='ratings-bar'>
+            <strong>7.7</strong>
+            <span class='metascore favorable'>80</span>
+        </div>
+        <p class='text-muted'>An elite spy uncovers a conspiracy that could trigger global warfare and must race against time to stop it while evading powerful enemies.</p>
+        <p class=''>Director: Sam Mendes | Stars: Tom Hardy, Rebecca Ferguson, Daniel Kaluuya</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='2,200,000'>2,200,000</span>
+            <span name='nv' data-value='720000000'>$720.0M</span>
+        </p>
+    </div>
+</div>
+
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Frozen Dominion</a>
+            <span class='lister-item-year text-muted unbold'>(2025)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>145 min</span> <span class='genre'>Adventure, Fantasy, Epic</span></p>
+        <div class='ratings-bar'>
+            <strong>8.0</strong>
+            <span class='metascore favorable'>85</span>
+        </div>
+        <p class='text-muted'>A kingdom trapped in eternal winter faces an uprising as a young hero discovers an ancient power to restore balance.</p>
+        <p class=''>Director: Patty Jenkins | Stars: Florence Pugh, Chris Hemsworth, Cate Blanchett</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='2,700,000'>2,700,000</span>
+            <span name='nv' data-value='980000000'>$980.0M</span>
+        </p>
+    </div>
+</div>
+
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Inferno Protocol</a>
+            <span class='lister-item-year text-muted unbold'>(2025)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>130 min</span> <span class='genre'>Action, Thriller, Crime</span></p>
+        <div class='ratings-bar'>
+            <strong>7.5</strong>
+            <span class='metascore favorable'>78</span>
+        </div>
+        <p class='text-muted'>A covert agent uncovers a criminal syndicate plotting mass destruction and must navigate a maze of betrayal and danger to stop them.</p>
+        <p class=''>Director: David Leitch | Stars: Ryan Reynolds, Ana de Armas, Dwayne Johnson</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='1,900,000'>1,900,000</span>
+            <span name='nv' data-value='660000000'>$660.0M</span>
+        </p>
+    </div>
+</div>
+
+<div id='main'>
+    <div class='lister-item mode-advanced'>
+        <h3 class='lister-item-header'>
+            <a>Silent Skies</a>
+            <span class='lister-item-year text-muted unbold'>(2025)</span>
+        </h3>
+        <p class='text-muted '><span class='runtime'>122 min</span> <span class='genre'>Drama, Mystery, Thriller</span></p>
+        <div class='ratings-bar'>
+            <strong>7.6</strong>
+            <span class='metascore favorable'>79</span>
+        </div>
+        <p class='text-muted'>After an experimental aircraft crashes, survivors uncover secrets and deception that reveal a conspiracy in the upper echelons of government.</p>
+        <p class=''>Director: Denis Villeneuve | Stars: Emily Blunt, Benedict Cumberbatch, Timothée Chalamet</p>
+        <p class='sort-num_votes-visible'>
+            <span name='nv' data-value='1,400,000'>1,400,000</span>
+            <span name='nv' data-value='500000000'>$500.0M</span>
+        </p>
+    </div>
+</div>
